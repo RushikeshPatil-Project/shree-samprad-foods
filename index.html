@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Samprad Food Pvt Ltd | Premium Frozen Green Peas</title>
+    <meta name="description" content="Shree Samprad Food brings you handpicked, premium quality frozen green peas, processed and packed with care to preserve freshness, nutrients, and natural taste.">
+    <meta name="keywords" content="frozen green peas, green peas, natural fusions, shree samprad food, premium peas, frozen vegetables">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --forest: #1a472a;
+            --forest-light: #2d5a3d;
+            --lime: #84cc16;
+            --lime-light: #a3e635;
+            --cream: #fefdf8;
+            --sage: #d4e4bc;
+            --sage-light: #e8f5d6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--cream);
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: var(--forest);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--forest) 0%, var(--forest-light) 100%);
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(26, 71, 42, 0.3);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            font-size: 32px;
+            color: var(--lime);
+            filter: drop-shadow(0 0 10px rgba(132, 204, 22, 0.5));
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            color: white;
+            font-weight: 800;
+        }
+
+        .logo span {
+            color: var(--lime);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 8px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(132, 204, 22, 0.2);
+            color: var(--lime);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(26, 71, 42, 0.9) 0%, rgba(45, 90, 61, 0.85) 100%),
+                        url('https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(132, 204, 22, 0.15) 0%, transparent 50%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(132, 204, 22, 0.2);
+            border: 1px solid rgba(132, 204, 22, 0.3);
+            padding: 8px 20px;
+            border-radius: 50px;
+            margin-bottom: 24px;
+            font-size: 14px;
+            color: var(--lime-light);
+            backdrop-filter: blur(10px);
+        }
+
+        .hero h2 {
+            font-size: 56px;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            line-height: 1.1;
+        }
+
+        .hero h2 span {
+            color: var(--lime);
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            opacity: 0.95;
+            line-height: 1.7;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--lime) 0%, var(--lime-light) 100%);
+            color: var(--forest);
+            box-shadow: 0 4px 15px rgba(132, 204, 22, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(132, 204, 22, 0.5);
+        }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: var(--lime);
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--sage-light);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 13px;
+            color: var(--forest);
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .section-header h2 {
+            font-size: 42px;
+            margin-bottom: 16px;
+        }
+
+        .section-header p {
+            font-size: 18px;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image-container {
+            position: relative;
+        }
+
+        .about-image {
+            width: 100%;
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(26, 71, 42, 0.15);
+        }
+
+        .about-badge {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background: linear-gradient(135deg, var(--lime) 0%, var(--lime-light) 100%);
+            color: var(--forest);
+            padding: 20px 28px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(132, 204, 22, 0.3);
+        }
+
+        .about-badge .number {
+            font-size: 32px;
+            font-weight: 800;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .about-badge .label {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .about-text h3 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .about-text p {
+            font-size: 17px;
+            color: #555;
+            margin-bottom: 24px;
+            line-height: 1.8;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 32px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px;
+            background: var(--sage-light);
+            border-radius: 12px;
+        }
+
+        .feature-item i {
+            font-size: 20px;
+            color: var(--lime);
+        }
+
+        .feature-item span {
+            font-weight: 500;
+            color: var(--forest);
+        }
+
+        /* Product Section */
+        .product-showcase {
+            background: linear-gradient(180deg, var(--sage-light) 0%, var(--cream) 100%);
+        }
+
+        .product-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .product-gallery {
+            position: sticky;
+            top: 100px;
+        }
+
+        .main-product-image {
+            width: 100%;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(26, 71, 42, 0.15);
+            margin-bottom: 20px;
+        }
+
+        .main-product-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .product-thumbnails {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .thumbnail {
+            width: 80px;
+            height: 80px;
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            border: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .thumbnail:hover,
+        .thumbnail.active {
+            border-color: var(--lime);
+            transform: scale(1.05);
+        }
+
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-details h3 {
+            font-size: 36px;
+            margin-bottom: 8px;
+        }
+
+        .product-subtitle {
+            font-size: 18px;
+            color: var(--lime);
+            margin-bottom: 24px;
+            font-weight: 600;
+        }
+
+        .product-description {
+            font-size: 17px;
+            color: #555;
+            margin-bottom: 32px;
+            line-height: 1.8;
+        }
+
+        .product-features {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        .product-features li {
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            color: #444;
+        }
+
+        .product-features li i {
+            color: var(--lime);
+            margin-right: 12px;
+            font-size: 18px;
+        }
+
+        .nutrition-card {
+            background: white;
+            padding: 28px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(26, 71, 42, 0.08);
+            margin-bottom: 32px;
+        }
+
+        .nutrition-card h4 {
+            margin-bottom: 20px;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nutrition-card h4 i {
+            color: var(--lime);
+        }
+
+        .nutrition-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .nutrition-table tr {
+            border-bottom: 1px solid #eee;
+        }
+
+        .nutrition-table tr:last-child {
+            border-bottom: none;
+        }
+
+        .nutrition-table td {
+            padding: 12px 0;
+        }
+
+        .nutrition-table td:first-child {
+            font-weight: 500;
+            color: #555;
+        }
+
+        .nutrition-table td:last-child {
+            text-align: right;
+            font-weight: 700;
+            color: var(--forest);
+        }
+
+        .product-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-forest {
+            background: linear-gradient(135deg, var(--forest) 0%, var(--forest-light) 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(26, 71, 42, 0.3);
+        }
+
+        .btn-forest:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(26, 71, 42, 0.4);
+        }
+
+        .btn-sage {
+            background: var(--sage-light);
+            color: var(--forest);
+            border: 2px solid var(--sage);
+        }
+
+        .btn-sage:hover {
+            background: var(--sage);
+        }
+
+        /* Instructions Section */
+        .instructions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+        }
+
+        .instruction-card {
+            background: white;
+            padding: 36px;
+            border-radius: 24px;
+            box-shadow: 0 10px 40px rgba(26, 71, 42, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .instruction-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(26, 71, 42, 0.12);
+        }
+
+        .instruction-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--lime) 0%, var(--lime-light) 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+
+        .instruction-icon i {
+            font-size: 28px;
+            color: var(--forest);
+        }
+
+        .instruction-card h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .instruction-card ul {
+            list-style: none;
+        }
+
+        .instruction-card li {
+            margin-bottom: 14px;
+            padding-left: 28px;
+            position: relative;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .instruction-card li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--lime);
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: linear-gradient(180deg, var(--cream) 0%, var(--sage-light) 100%);
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-info h3 {
+            font-size: 28px;
+            margin-bottom: 16px;
+        }
+
+        .contact-info > p {
+            font-size: 17px;
+            color: #555;
+            margin-bottom: 32px;
+            line-height: 1.7;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 28px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(26, 71, 42, 0.08);
+            margin-bottom: 24px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-item-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--sage-light);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-item-icon i {
+            font-size: 20px;
+            color: var(--forest);
+        }
+
+        .contact-item-content h4 {
+            font-size: 14px;
+            color: #888;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .contact-item-content p {
+            font-size: 16px;
+            color: var(--forest);
+            font-weight: 600;
+        }
+
+        .phone-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 24px;
+        }
+
+        .phone-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, var(--forest) 0%, var(--forest-light) 100%);
+            color: white;
+            padding: 14px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .phone-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(26, 71, 42, 0.3);
+        }
+
+        .map-container {
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(26, 71, 42, 0.15);
+            height: 100%;
+            min-height: 500px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, var(--forest) 0%, #0f2d18 100%);
+            color: white;
+            padding: 80px 0 30px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand h3 {
+            font-size: 28px;
+            color: white;
+            margin-bottom: 16px;
+        }
+
+        .footer-brand h3 span {
+            color: var(--lime);
+        }
+
+        .footer-brand p {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 12px;
+        }
+
+        .footer-social a {
+            width: 44px;
+            height: 44px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            background: var(--lime);
+            color: var(--forest);
+        }
+
+        .footer-links h4,
+        .footer-contact h4 {
+            color: white;
+            font-size: 18px;
+            margin-bottom: 24px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links ul li a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-links ul li a:hover {
+            color: var(--lime);
+            padding-left: 8px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .footer-contact-item i {
+            color: var(--lime);
+            width: 20px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .about-content,
+            .product-container,
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .about-badge {
+                right: 20px;
+            }
+
+            .product-gallery {
+                position: static;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                position: relative;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+            }
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: -5%;
+                right: -5%;
+                background: var(--forest);
+                padding: 20px;
+                border-radius: 0 0 16px 16px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            }
+
+            nav.active {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            nav ul li a {
+                display: block;
+                padding: 12px 16px;
+            }
+
+            .hero h2 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .section-header h2 {
+                font-size: 32px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .instructions-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .phone-buttons {
+                flex-direction: column;
+            }
+
+            .product-buttons {
+                flex-direction: column;
+            }
+
+            .product-buttons .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* Animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .hero-badge {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <h1>Shree <span>Samprad</span> Food</h1>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#product">Our Product</a></li>
+                    <li><a href="#instructions">Instructions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-leaf"></i>
+                    <span>100% Natural & Fresh</span>
+                </div>
+                <h2>Premium Frozen<br><span>Green Peas</span></h2>
+                <p>Shree Samprad Food brings you handpicked, premium quality frozen green peas, processed and packed with care to preserve freshness, nutrients, and natural taste.</p>
+                <div class="hero-buttons">
+                    <a href="#product" class="btn btn-primary">
+                        <i class="fas fa-box"></i>
+                        Explore Our Product
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-phone"></i>
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-info-circle"></i>
+                    About Us
+                </div>
+                <h2>Our Story</h2>
+                <p>Committed to quality and freshness since day one</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image-container">
+                    <img src="https://images.unsplash.com/photo-1615484477778-ca3b77940c25?auto=format&fit=crop&w=800&q=80" alt="Fresh Green Peas" class="about-image">
+                    <div class="about-badge">
+                        <div class="number">100%</div>
+                        <div class="label">Natural</div>
+                    </div>
+                </div>
+
+                <div class="about-text">
+                    <h3>Bringing Farm-Fresh Green Peas to Your Table</h3>
+                    <p>Shree Samprad Food Pvt Ltd is a leading producer of high-quality frozen green peas based in Maharashtra, India. We specialize in bringing farm-fresh green peas directly to your table through our state-of-the-art freezing technology.</p>
+                    <p>Our commitment to quality ensures that every pea is handpicked, processed, and packed with care to preserve natural taste, vibrant color, and essential nutrients. We follow strict quality control measures at every step of production.</p>
+
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>No Preservatives</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Farm Fresh</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Quality Assured</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>IQF Technology</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="section product-showcase" id="product">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-box"></i>
+                    Our Product
+                </div>
+                <h2>Premium Green Peas</h2>
+                <p>Frozen at peak freshness to lock in nutrients and flavor</p>
+            </div>
+
+            <div class="product-container">
+                <div class="product-gallery">
+                    <div class="main-product-image">
+                        <img id="mainImage" src="https://images.unsplash.com/photo-1604908177522-402e8d6c5c2b?auto=format&fit=crop&w=800&q=80" alt="Fresh Green Peas">
+                    </div>
+                    <div class="product-thumbnails">
+                        <div class="thumbnail active" data-image="https://images.unsplash.com/photo-1604908177522-402e8d6c5c2b?auto=format&fit=crop&w=800&q=80">
+                            <img src="https://images.unsplash.com/photo-1604908177522-402e8d6c5c2b?auto=format&fit=crop&w=200&q=80" alt="Fresh Green Peas">
+                        </div>
+                        <div class="thumbnail" data-image="https://images.unsplash.com/photo-1598514982155-7c1c1d1f0d4b?auto=format&fit=crop&w=800&q=80">
+                            <img src="https://images.unsplash.com/photo-1598514982155-7c1c1d1f0d4b?auto=format&fit=crop&w=200&q=80" alt="Green Peas Bowl">
+                        </div>
+                        <div class="thumbnail" data-image="https://images.unsplash.com/photo-1615484477778-ca3b77940c25?auto=format&fit=crop&w=800&q=80">
+                            <img src="https://images.unsplash.com/photo-1615484477778-ca3b77940c25?auto=format&fit=crop&w=200&q=80" alt="Frozen Green Peas">
+                        </div>
+                        <div class="thumbnail" data-image="https://images.unsplash.com/photo-1625242661157-47fdd4a4f85e?auto=format&fit=crop&w=800&q=80">
+                            <img src="https://images.unsplash.com/photo-1625242661157-47fdd4a4f85e?auto=format&fit=crop&w=200&q=80" alt="Pea Pods">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-details">
+                    <h3>Natural Fusions Green Peas</h3>
+                    <div class="product-subtitle">100% Natural • No Preservatives • Ready to Cook</div>
+
+                    <p class="product-description">Our premium frozen green peas are harvested at peak freshness and immediately frozen to lock in nutrients, flavor, and vibrant green color. Perfect for curries, soups, rice dishes, and more.</p>
+
+                    <ul class="product-features">
+                        <li><i class="fas fa-check-circle"></i> Handpicked from lush green fields</li>
+                        <li><i class="fas fa-check-circle"></i> Frozen within hours of harvesting</li>
+                        <li><i class="fas fa-check-circle"></i> No preservatives or additives</li>
+                        <li><i class="fas fa-check-circle"></i> Rich in protein, fiber, and vitamins</li>
+                        <li><i class="fas fa-check-circle"></i> Maintains freshness for 12 months at -18°C</li>
+                        <li><i class="fas fa-check-circle"></i> 1kg convenient packaging</li>
+                    </ul>
+
+                    <div class="nutrition-card">
+                        <h4><i class="fas fa-chart-pie"></i> Nutritional Information (per 100g)</h4>
+                        <table class="nutrition-table">
+                            <tr>
+                                <td>Energy</td>
+                                <td>99 kcal</td>
+                            </tr>
+                            <tr>
+                                <td>Carbohydrates</td>
+                                <td>16.6 g</td>
+                            </tr>
+                            <tr>
+                                <td>Protein</td>
+                                <td>6.5 g</td>
+                            </tr>
+                            <tr>
+                                <td>Fat</td>
+                                <td>0.7 g</td>
+                            </tr>
+                            <tr>
+                                <td>Fiber</td>
+                                <td>3.6 g</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="product-buttons">
+                        <a href="#contact" class="btn btn-forest">
+                            <i class="fas fa-shopping-cart"></i>
+                            Order Now
+                        </a>
+                        <a href="#instructions" class="btn btn-sage">
+                            <i class="fas fa-book"></i>
+                            Usage Instructions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructions Section -->
+    <section class="section" id="instructions">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-book-open"></i>
+                    How to Use
+                </div>
+                <h2>Storage & Cooking Instructions</h2>
+                <p>Get the best out of your frozen green peas</p>
+            </div>
+
+            <div class="instructions-grid">
+                <div class="instruction-card">
+                    <div class="instruction-icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <h3>Storage Instructions</h3>
+                    <ul>
+                        <li>Always store in the freezer compartment of your refrigerator</li>
+                        <li>Keep frozen at -18°C or below for optimal quality</li>
+                        <li>Once opened, reseal the pack tightly or transfer to an airtight container</li>
+                        <li>Best before 12 months from packaging when stored at -18°C</li>
+                        <li>Do not refreeze once thawed</li>
+                    </ul>
+                </div>
+
+                <div class="instruction-card">
+                    <div class="instruction-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Cooking Instructions</h3>
+                    <ul>
+                        <li>Cut open the pack & loosen peas gently</li>
+                        <li>Take out required quantity and immediately return balance to freezer</li>
+                        <li>For immediate cooking, thaw peas in fresh water for 10-15 minutes</li>
+                        <li>Avoid using microwave for defrosting</li>
+                        <li>Cook as per your recipe - no need to overcook as peas are already tender</li>
+                        <li>Perfect for curries, pulao, soups, salads, and snacks</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Get in Touch
+                </div>
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Visit Our Facility</h3>
+                    <p>Our state-of-the-art processing facility is located in Wadgaon Haveli, Maharashtra, where we ensure the highest standards of hygiene and quality control.</p>
+
+                    <div class="contact-card">
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-item-content">
+                                <h4>Address</h4>
+                                <p>Wadgaon Haveli, Maharashtra 415124, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-item-content">
+                                <h4>Email</h4>
+                                <p>info@shreesampradfood.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-item-content">
+                                <h4>Business Hours</h4>
+                                <p>Mon-Sat: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="phone-buttons">
+                        <a href="tel:+919755179655" class="phone-btn">
+                            <i class="fas fa-phone"></i>
+                            +91 97551 79655
+                        </a>
+                        <a href="tel:+917887825186" class="phone-btn">
+                            <i class="fas fa-phone"></i>
+                            +91 78878 25186
+                        </a>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15232.370349916344!2d74.2164712!3d17.2325038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1781c0676885d%3A0x2e1cb572ee332ac7!2sWadgaon%20Haveli%2C%20Maharashtra%20415124!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <h3>Shree <span>Samprad</span> Food</h3>
+                    <p>Bringing farm-fresh green peas to your table through premium quality frozen products. Committed to quality, freshness, and customer satisfaction.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#product"><i class="fas fa-chevron-right"></i> Our Product</a></li>
+                        <li><a href="#instructions"><i class="fas fa-chevron-right"></i> Instructions</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Wadgaon Haveli, Maharashtra 415124</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 97551 79655</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 78878 25186</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@shreesampradfood.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2024 Shree Samprad Food Pvt Ltd. All Rights Reserved. | Natural Fusions Green Peas</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainNav = document.getElementById('mainNav');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (mainNav.classList.contains('active')) {
+                    mainNav.classList.remove('active');
+                    const icon = mobileMenuBtn.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Product image gallery functionality
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const mainImage = document.getElementById('mainImage');
+
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', () => {
+                thumbnails.forEach(t => t.classList.remove('active'));
+                thumbnail.classList.add('active');
+                const newImageSrc = thumbnail.getAttribute('data-image');
+                mainImage.src = newImageSrc;
+            });
+        });
+    </script>
+</body>
+</html>
